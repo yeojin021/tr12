@@ -1,0 +1,140 @@
+.inner {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.inner_3 {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 120px 0;
+}
+
+.default .title {
+    max-width: 1410px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.default .title h2 {
+    font-size: 32px;
+    color: #000;
+}
+
+.wheel {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.wheel::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 28px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    border-radius: 50%;
+    animation: scroll 2s infinite;
+
+}
+
+.wheel::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+    height: 80px;
+    width: 1px;
+    background: #fff;
+    opacity: 0.5;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 80px);
+    }
+
+    100% {
+        transform: translate(-50%, 80px) scale(12);
+        opacity: 0.1;
+    }
+}
+
+.btn {
+    display: block;
+
+
+    color: #fff;
+    width: 120px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 14px;
+}
+
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.4s;
+}
+
+.btn_2 {
+    display: block;
+
+
+    color: #000;
+    width: 120px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+
+
+.btn_2:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.btn_3 {
+    display: block;
+
+
+    color: #000;
+    width: 480px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+
+
+.btn_3:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#main_visual .wheel {
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 0);
+    bottom: 0;
+}
