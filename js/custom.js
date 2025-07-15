@@ -107,4 +107,37 @@ $(function () {
             }
         });
     });
+});
+
+
+
+
+$(function () {
+    $('.mbtn').on('click', function () {
+        $(this).toggleClass('is-active')
+        $('.gnb').toggleClass('on');
+        $('#header h1').toggleClass('on')
+    })
+});
+
+
+$(function () {
+
+    $('.gnb>ul>li>a').on('click', function (e) {
+        if ($('.gnb').hasClass('on') && $(this).next().is('ul')) {
+            e.preventDefault();
+            $('.gnb>ul>li ul').stop().slideUp();
+            $(this).next().stop().slideToggle();
+        }
+    });
+
+    $(window).on('resize', function () {
+        let ww = $(window).width();
+        if (ww > 768) {
+            $('.gnb').removeClass('on');
+            $('.gnb>ul>li ul').removeAttr('style');
+        }
+    })
 })
+
+
