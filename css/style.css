@@ -31,7 +31,7 @@
 
 #header h1 a {
     display: block;
-    width: 130px;
+    width: 170px;
     height: 56px;
     background: url(../images/logo-siv-w.svg) no-repeat center/cover;
 }
@@ -152,10 +152,12 @@
 
 #main_visual {
     position: relative;
+
 }
 
 #main_visual .main_visual_slide .itm {
     height: 100vh;
+
 }
 
 
@@ -177,6 +179,7 @@
 
 #main_visual .main_visual_slide .itm05 {
     background: url(../images/main_visual05.jpg)no-repeat center center/cover;
+
 }
 
 
